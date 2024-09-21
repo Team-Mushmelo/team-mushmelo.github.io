@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150dvh;
+}
+
+.esquerda {
+    background-color: blueviolet;
+    position: relative;
+
+}
+
+.direita {
+    background-color: aqua;
+    position: relative;
+}
+
+.bloco1 {
+    background-color: #000000;
+    width: 75%;
+    height: 10em;
+    position: sticky;
+    left: 5dvi;    
+    top: 100px;
+    bottom: 100px;
+}
