@@ -1,95 +1,175 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Variáveis de Cores */
+:root {
+    --primary-bg-color: #3A221C;
+    --primary-text-color: #fff;
+    --accent-color: #359381;
+    --dark-color: #333;
+    --logo-color: #000;
+}
+
+/* Estilos Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
-    background: #f9f9f9;
+    background-color: var(--primary-bg-color);
     min-height: 100vh;
     overflow-x: hidden;
+    line-height: 1.5;
 }
 
+/* Nav Bar */
 header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 2rem 6rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
+    background: transparent;
 }
 
 .logo {
-    font-size: 2em;
-    color: #000000;
+    font-size: 2rem;
+    color: var(--logo-color);
     pointer-events: none;
-    margin-right: 270px;
+    margin-right: 17rem;
 }
 
+/* Navegação */
 .navigation a {
     text-decoration: none;
-    color: #359381;
-    padding: 6px 15px;
+    color: var(--accent-color);
+    padding: 0.375rem 1rem;
     border-radius: 20px;
-    margin: 0 10px;
+    margin: 0 0.625rem;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .navigation a:hover,
 .navigation .active {
-    background: #359381;
-    color: #fff;
+    background: var(--accent-color);
+    color: var(--primary-text-color);
 }
 
+/* Hero Section */
 .parallax {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 125vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#text {
-    position: absolute;
-    font-size: 5em;
-    color: #333;
-}
-
-#templo {
-    margin-top: 30px;
-}
-
-
-.parallax img {
+.parallax img:not(#LogoImg) {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     pointer-events: none;
 }
 
+/* Logo */
+#LogoImg {
+    width: 20vh;
+    max-width: 20vh;
+    position: absolute;
+
+}
+
+img {
+    pointer-events: none;
+}
+
+#text {
+    position: absolute;
+    font-size: 5rem;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+#templo {
+    margin-top: 2rem;
+}
+
+/* Imagem de Divisão de Montanha */
+.montDiv {
+    width: 100%;
+    position: relative;
+    bottom: 25vh;
+}
+
+/* Seção Secundária */
 .sec {
     position: relative;
-    background: #003329;
-    padding: 100px;
+    background: var(--primary-bg-color);
+    padding: 6.25rem;
 }
 
 .sec h2 {
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
 }
 
 .sec p {
-    font-size: 1em;
-    color: #fff;
+    font-size: 1rem;
+    color: var(--primary-text-color);
     font-weight: 300;
 }
 
+/* Responsividade */
+@media (max-width: 1200px) {
+    header {
+        padding: 2rem 4rem;
+    }
+    .logo {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+    .logo {
+        margin-right: 5rem;
+    }
+    .navigation a {
+        padding: 0.375rem 0.75rem;
+        margin: 0 0.5rem;
+    }
+    #text {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+        margin-right: 3rem;
+    }
+    .navigation a {
+        padding: 0.375rem 0.5rem;
+        margin: 0 0.25rem;
+    }
+    #text {
+        font-size: 2rem;
+    }
+}
