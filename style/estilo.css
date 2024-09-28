@@ -165,6 +165,10 @@ nav a {
         content: "425px";
     }
 
+    nav {
+        display: none;
+    }
+
     #templo {
 
         max-width: 30vh;
