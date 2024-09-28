@@ -128,7 +128,7 @@ nav a {
 
 
 /*config para dispositivos menores que pcs e notebook */
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
     .disp::after {
         content: "768px";
     }
