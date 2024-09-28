@@ -1,19 +1,32 @@
-let LogoImg = document.getElementById('LogoImg');
 let fundo = document.getElementById('fundo');
-let montanha1 = document.getElementById('montanha1');
-let montanha2 = document.getElementById('montanha2');
+
+let montanhaL = document.getElementById('montanhaL');
+let montanhaR = document.getElementById('montanhaR');
+
 let templo = document.getElementById('templo');
+let LogoImg = document.getElementById('LogoImg');
+
+let isScrolling = false;
+
 
 window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+            animateParallax();
+            isScrolling = false;
+        });
+        isScrolling = true;
+    }
+
+
+})
+function animateParallax() {
     let value = window.scrollY;
 
-    LogoImg.style.marginTop = value * 2.5 + "px";
+    LogoImg.style.transform = `translateY(${value * 0.5}px) scale(${1 + value * -0.0001})`;
 
-    templo.style.top = value * -0.12 + "px";
-    templo.style.left = value * 0.1 + "px";
+    templo.style.transform = `translate(${value * 0.1}px, ${value * -0.02}px)`;
 
-    montanha1.style.left = value * -0.5 + "px";
-    montanha2.style.left = value * 0.5 + "px";
-
-    fundo.style.scale = value * 0.1 + "px";
-})
+    montanhaL.style.transform = `translateY(${value * -0.1}px)`;
+    montanhaR.style.transform = `translateY(${value * -0.1}px)`;
+}

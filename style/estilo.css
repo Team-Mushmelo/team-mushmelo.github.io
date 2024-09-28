@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3A221C;
+}
+
+/*nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.logo h2 {
+    color: #fff;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+
+.items ul a {
+
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.items a:hover {
+    color: blue;
+}
+
+.btn button {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #fff;
+    color: rgb(17, 105, 105);
+}
+
+/*Parallax config basic*/
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    overflow: hidden;
+
+    justify-content: center;
+}
+
+.parallax img {
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Imagens do parallax*/
+#fundo {
+    width: 100%;
+    height: 120vh;
+}
+
+#montanhaL,
+#montanhaR {
+    width: 60%;
+    max-width: 60vh;
+    bottom: 10vh;
+}
+
+#montanhaL {
+    left: 0;
+}
+
+#montanhaR {
+    right: 0;
+}
+
+#LogoImg {
+    width: 20%;
+    max-width: 20vh;
+    position: absolute;
+    top: 30%;
+}
+
+#templo {
+    width: 75%;
+    max-width: 75vh;
+    bottom: 14vh;
+    left: 50%;
+
+}
+
+#montanhaFrente {
+    width: 100%;
+    bottom: 8vh;
+}
+
+#montDiv {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.disp::after {
+    content: "+769px";
+}
+
+
+/*config para dispositivos menores que pcs e notebook */
+@media screen and (max-width: 768px) {
+    .disp::after {
+        content: "768px";
+    }
+
+    #templo {
+        max-width: 50vh;
+        bottom: 10vh;
+        left: 50%;
+
+    }
+
+    .parallax {
+        height: calc(100dvh + 1px);
+
+    }
+
+    #montanhaL,
+    #montanhaR {
+        max-width: 40dvh;
+        bottom: 5dvh;
+    }
+
+    #montanhaFrente {
+        bottom: 6dvh;
+    }
+
+    #fundo {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .disp::after {
+        content: "425px";
+    }
+
+    #templo {
+
+        max-width: 30vh;
+        bottom: 7vh;
+        left: 50%;
+
+    }
+
+    .parallax {
+        height: calc(60dvh + 1px);
+    }
+
+    #montanhaFrente {
+        bottom: 3dvh;
+    }
+
+    #montanhaL,
+    #montanhaR {
+        max-width: 25vh;
+        bottom: 5dvh;
+    }
+
+}

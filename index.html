@@ -1,84 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/style.css">
-  <title>Landing page</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="style/estilo.css">
 </head>
 
 <body>
-
-  <!--Header navbar-->
-  <header>
-    <h2 class="logo">Logo</h2>
-    <nav class="navigation">
-      <a href="#Home" class="active"> Home</a>
-      <a href="#About">Sobre</a>
-      <a href="#Services">Teste</a>
-      <a href="#Contato">Contato</a>
-    </nav>
-    
-    <h2 class="logo">Logo</h2>
-  </header>
-
-
-  <!-- Container Principal do Hero -->
+  <p class="disp">
+    Tamanho
+  </p>
+  <nav class="navbar">
+    <a class="logo">
+      <img src="src/Nome.svg" width="50">
+    </a>
+    <div class="items">
+      <ul>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+      </ul>
+    </div>
+    <div class="btn">
+      <a href="">CONTACT</a>
+    </div>
+  </nav>
   <section class="parallax" id="Home">
 
-    <img src="src/Fundo.png" id="fundo">
-    <img src="src/Montanha1.png" id="montanha1">
-    <img src="src/Montanha2.png" id="montanha2">
-    <img src="src/Templo.png" id="templo">
+    <img src="img/Fundo.png" id="fundo">
 
-    <img src="src/Logo.svg" id="LogoImg">
-    <img src="src/MontanhaFrente.png" id="montanhaFrente">
+    <img src="img/MontahaPequenaL.png" id="montanhaL">
+    <img src="img/MontahaPequenaR.png" id="montanhaR">
 
+    <img src="img/Templo.png" id="templo">
+
+    <img src="img/Logo.svg" id="LogoImg">
+
+    <img src="img/MontanhaFrente.png" id="montanhaFrente">
+
+    <img src="img/MontanhaDiv.svg" id="montDiv">
   </section>
-  <img src="src/MontanhaDiv 1.svg" class="montDiv">
 
-  <section class="sec">
-    <h2>Lorem ipsum, dolor sit amet </h2>
-    <p class="">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed quod ipsa corrupti cum temporibus vel, ex,
-      quis eligendi consequatur asperiores tempore. Ut alias tempora velit fugiat corporis enim iure aut repellendus
-      ipsam, nulla laboriosam atque doloribus distinctio dolor ea at expedita. Obcaecati quod maxime iste rem odit nam
-      sed suscipit et cupiditate, nulla voluptas blanditiis nihil animi odio qui reiciendis, ea atque! Omnis animi sint
-      ad sapiente dolor neque modi harum ducimus totam sequi officiis porro quibusdam repellendus voluptatum, fugiat ut
-      ipsam expedita autem blanditiis, numquam nostrum saepe. Rerum earum illo aut animi sapiente cum possimus harum,
-      dolor quisquam perspiciatis voluptate recusandae ducimus optio a officiis corrupti dolores minus, eligendi sit?
-      Saepe, aperiam? Quia, tempore in. Velit hic natus in nisi animi fuga incidunt! Dolores officiis nemo molestiae
-      cupiditate.
-      <br>
-      <br>
+  <section id="exemplo">
+    <style>
+      .disp {
+        position: fixed;
+        /* Esconde o texto original */
+        z-index: 150;
+      }
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed quod ipsa corrupti cum temporibus vel, ex,
-      quis eligendi consequatur asperiores tempore. Ut alias tempora velit fugiat corporis enim iure aut repellendus
-      ipsam, nulla laboriosam atque doloribus distinctio dolor ea at expedita. Obcaecati quod maxime iste rem odit nam
-      sed suscipit et cupiditate, nulla voluptas blanditiis nihil animi odio qui reiciendis, ea atque! Omnis animi sint
-      ad sapiente dolor neque modi harum ducimus totam sequi officiis porro quibusdam repellendus voluptatum, fugiat ut
-      ipsam expedita autem blanditiis, numquam nostrum saepe. Rerum earum illo aut animi sapiente cum possimus harum,
-      dolor quisquam perspiciatis voluptate recusandae ducimus optio a officiis corrupti dolores minus, eligendi sit?
-      Saepe, aperiam? Quia, tempore in. Velit hic natus in nisi animi fuga incidunt! Dolores officiis nemo molestiae
-      cupiditate.
-      <br>
-      <br>
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed quod ipsa corrupti cum temporibus vel, ex,
-      quis eligendi consequatur asperiores tempore. Ut alias tempora velit fugiat corporis enim iure aut repellendus
-      ipsam, nulla laboriosam atque doloribus distinctio dolor ea at expedita. Obcaecati quod maxime iste rem odit nam
-      sed suscipit et cupiditate, nulla voluptas blanditiis nihil animi odio qui reiciendis, ea atque! Omnis animi sint
-      ad sapiente dolor neque modi harum ducimus totam sequi officiis porro quibusdam repellendus voluptatum, fugiat ut
-      ipsam expedita autem blanditiis, numquam nostrum saepe. Rerum earum illo aut animi sapiente cum possimus harum,
-      dolor quisquam perspiciatis voluptate recusandae ducimus optio a officiis corrupti dolores minus, eligendi sit?
-      Saepe, aperiam? Quia, tempore in. Velit hic natus in nisi animi fuga incidunt! Dolores officiis nemo molestiae
-      cupiditate.
-      <br>
-      <br>
-    </p>
+
+      #exemplo {
+        width: 100%;
+        background-color: #3A221C;
+        height: 100vh;
+      }
+    </style>
   </section>
-  <script src="./scripts/script.js"></script>
 </body>
+
+<script src="scripts/script.js"></script>
 
 </html>
