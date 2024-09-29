@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style/estilo.css?v=1.0">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
@@ -24,20 +24,24 @@
   <p class="disp">
     Tamanho
   </p>
-  <nav class="navbar">
+  <nav id="navbar" class="navbar">
     <a class="logo">
       <img src="img/Nome.svg" width="50">
     </a>
     <div class="items">
       <ul>
-        <a href="#">Sobre o jogo</a>
+        <a href="teste.html">Sobre o jogo</a>
         <a href="#">Gameplay</a>
         <a href="#">Quem Somos</a>
       </ul>
     </div>
     <div class="btn">
-      <a href="">Download</a>
+      <a href="" class="Download">Download</a>
+      <a href="javascript:void(0);" class="icon" onclick="navResponsiva()">
+        <img src="img/Icon_menu.svg" width="16" alt="IconMenu">
+      </a>
     </div>
+
   </nav>
   <section class="parallax" id="Home">
 
@@ -68,7 +72,7 @@
       #exemplo {
         width: 100%;
         background-color: #3A221C;
-        height: 100vh;
+        height: 100dvh;
       }
     </style>
   </section>

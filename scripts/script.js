@@ -30,3 +30,12 @@ function animateParallax() {
     montanhaL.style.transform = `translateY(${value * -0.1}px)`;
     montanhaR.style.transform = `translateY(${value * -0.1}px)`;
 }
+
+function navResponsiva() {
+    let nav = document.getElementById("navbar");
+    if (nav.className === "navbar") {
+        nav.className += " navResponsiva";
+    } else {
+        nav.className = "navbar";
+    }
+}
