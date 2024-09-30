@@ -254,8 +254,8 @@ nav a {
 
     #templo {
 
-        max-width: 30dvh;
-        bottom: 7dvh;
+        max-width: 50dvw;
+        bottom: 4.5dvh;
         left: 50%;
 
     }
@@ -264,14 +264,18 @@ nav a {
         height: calc(45dvh + 1px);
     }
 
+    #fundo {
+        height: 50dvh;
+    }
+
     #montanhaFrente {
-        bottom: 3dvh;
+        bottom: 2.5dvh;
     }
 
     #montanhaL,
     #montanhaR {
-        max-width: 25dvh;
-        bottom: 5dvh;
+        max-width: 40dvw;
+        bottom: 2.5dvh;
     }
 
 }
