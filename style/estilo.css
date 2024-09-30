@@ -35,8 +35,6 @@ nav a {
 }
 
 .items ul a {
-
-    margin: 0 20px;
     font-size: 18px;
 }
 
@@ -130,6 +128,72 @@ nav a {
 
 .icon {
     display: none;
+}
+
+/*section Sobre o jogo*/
+
+#sobre-jogo {
+    width: 100%;
+    margin: 100px 0;
+    background-color: #3A221C;
+    color: #FEDB9D;
+    padding: 50px 20px;
+    /* ajuste o padding conforme necessário */
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+
+#sobre-jogo .container {
+    margin: 0 auto;
+    /* centraliza o container */
+}
+
+
+#sobre-jogo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+#sobre-jogo p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+/*sction picture*/
+#picture {
+    position: relative;
+    width: 100%;
+    height: 160dvh;
+    display: flex;
+    overflow: hidden;
+
+    justify-content: center;
+}
+
+#picture img {
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+}
+
+.imgMeio {
+    margin: 10px 0;
+}
+
+.upMontDiv {
+    z-index: 1;
+    top: 0;
+    transform: rotate(180deg);
+
+}
+
+.downMontDiv {
+    bottom: 0;
 }
 
 /*config para tablet*/
