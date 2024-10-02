@@ -85,9 +85,9 @@ nav a {
 
 #montanhaL,
 #montanhaR {
-    width: 60%;
+    width: 70%;
     max-width: 60dvh;
-    bottom: 10dvh;
+    bottom: 30dvh;
 }
 
 #montanhaL {
@@ -108,8 +108,8 @@ nav a {
 #templo {
     width: 75%;
     max-width: 75dvh;
-    bottom: 14dvh;
-    left: 50%;
+    bottom: 25dvh;
+    right: 0;
 
 }
 

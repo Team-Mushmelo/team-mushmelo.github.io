@@ -25,10 +25,10 @@ function animateParallax() {
 
     LogoImg.style.transform = `translateY(${value * 0.5}px) scale(${1 + value * -0.0001})`;
 
-    templo.style.transform = `translate(${value * 0.1}px, ${value * -0.02}px)`;
+    templo.style.transform = `translateY(${value * -0.1}px)`;
 
-    montanhaL.style.transform = `translateY(${value * -0.1}px)`;
-    montanhaR.style.transform = `translateY(${value * -0.1}px)`;
+    montanhaL.style.transform = `translateY(${value * 0.2}px)`;
+    montanhaR.style.transform = `translateY(${value * 0.2}px)`;
 }
 
 function navResponsiva() {
