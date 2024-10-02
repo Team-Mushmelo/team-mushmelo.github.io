@@ -25,7 +25,7 @@ function animateParallax() {
 
     LogoImg.style.transform = `translateY(${value * 0.5}px) scale(${1 + value * -0.0001})`;
 
-    templo.style.transform = `translateY(${value * -0.1}px)`;
+    templo.style.transform = `translateY(${value * -0.001}dvw)`;
 
     montanhaL.style.transform = `translateY(${value * 0.2}px)`;
     montanhaR.style.transform = `translateY(${value * 0.2}px)`;
