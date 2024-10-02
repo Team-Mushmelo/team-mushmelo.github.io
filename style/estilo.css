@@ -185,10 +185,11 @@ nav a {
 
 .imgMeio {
     margin: 10px 0;
+    z-index: -1;
 }
 
 .upMontDiv {
-    z-index: 1;
+    z-index: 0;
     top: 0;
     transform: rotate(180deg);
 
