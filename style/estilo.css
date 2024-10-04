@@ -32,7 +32,7 @@ nav a {
     color: #fff;
     letter-spacing: 6px;
     cursor: pointer;
-    margin-right: 25px;
+    width: 28dvh;
 }
 
 .items ul a {
@@ -62,6 +62,13 @@ nav a {
 }
 
 /*Parallax config basic*/
+#templo,
+#montanhaL,
+#montanhaR,
+#LogoImg {
+    will-change: transform;
+}
+
 .parallax {
     position: relative;
     width: 100%;
@@ -199,6 +206,49 @@ nav a {
     bottom: 0;
 }
 
+/*Section gameplay*/
+#Gameplay {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.Gamesection {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 25px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 400px;
+}
+
+.GameImg {
+    flex-basis: 50%;
+    position: relative;
+    width: 5dvw;
+    height: 20dvw;
+}
+
+.GameImg img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.GameFase {
+    padding: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.GameTxt {
+    flex-basis: 30%;
+    align-items: flex-end;
+    color: #FEDB9D;
+}
+
+
+
 /*config para tablet*/
 @media (max-width: 768px) {
     .disp::after {
@@ -229,6 +279,27 @@ nav a {
 
     #fundo {
         height: 100dvh;
+    }
+
+    .Gamesection {
+        flex-direction: column;
+        /* Coloca o texto embaixo da imagem em telas menores */
+        align-items: center;
+        /* Centraliza os itens */
+    }
+
+    .GameImg,
+    .GameTxt {
+        max-width: 100%;
+        /* Para garantir que ocupem 100% da largura disponível */
+        flex-basis: 100%;
+    }
+
+    .GameTxt {
+        padding-left: 0;
+        /* Remove o padding lateral para centralizar o texto */
+        padding-top: 20px;
+        /* Adiciona espaçamento entre a imagem e o texto */
     }
 }
 
@@ -349,4 +420,24 @@ nav a {
         bottom: 2.5dvh;
     }
 
+    .Gamesection {
+        flex-direction: column;
+        /* Coloca o texto embaixo da imagem em telas menores */
+        align-items: center;
+        /* Centraliza os itens */
+    }
+
+    .GameImg,
+    .GameTxt {
+        max-width: 100%;
+        /* Para garantir que ocupem 100% da largura disponível */
+        flex-basis: 100%;
+    }
+
+    .GameTxt {
+        padding-left: 0;
+        /* Remove o padding lateral para centralizar o texto */
+        padding-top: 20px;
+        /* Adiciona espaçamento entre a imagem e o texto */
+    }
 }

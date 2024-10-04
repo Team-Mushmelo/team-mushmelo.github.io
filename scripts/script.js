@@ -23,12 +23,10 @@ window.addEventListener('scroll', () => {
 function animateParallax() {
     let value = window.scrollY;
 
-    LogoImg.style.transform = `translateY(${value * 0.5}px) scale(${1 + value * -0.0001})`;
-
-    templo.style.transform = `translateY(${value * -0.001}dvw)`;
-
-    montanhaL.style.transform = `translateY(${value * 0.2}px)`;
-    montanhaR.style.transform = `translateY(${value * 0.2}px)`;
+    LogoImg.style.transform = `translate3d(0, ${value * 0.5}px, 0) scale(${1 + value * -0.0001})`;
+    templo.style.transform = `translate3d(0, ${value * -0.001}dvw, 0)`;
+    montanhaL.style.transform = `translate3d(0, ${value * 0.2}px, 0)`;
+    montanhaR.style.transform = `translate3d(0, ${value * 0.2}px, 0)`;
 }
 
 function navResponsiva() {
