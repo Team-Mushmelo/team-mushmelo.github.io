@@ -307,6 +307,11 @@ nav a {
         content: "425px";
     }
 
+    p {
+        font-size: 1.1rem;
+       
+    }
+
     /* navbar para celular*/
     .icon {
         display: block;
