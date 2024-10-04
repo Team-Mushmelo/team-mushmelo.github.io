@@ -41,7 +41,7 @@ nav a {
 }
 
 .items a:hover {
-    color: blue;  
+    color: blue;
 }
 
 .btn .Download {
@@ -158,12 +158,12 @@ nav a {
     /* centraliza o container */
 }
 
- h2 {
+h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
- p {
+p {
     font-size: 1.5rem;
     line-height: 1.6;
     max-width: 75%;
@@ -208,18 +208,31 @@ nav a {
 #Gameplay {
     width: 100%;
     overflow: hidden;
+}
+
+.Gamesection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 200px 50px;
+}
+.Gamesection:nth-child(2){
+    flex-direction: row-reverse;
 
 }
 
-    padding: 10px 25px;
-    align-items: flex-start;
+.GameImg {
+    width: 50dvw;
+}
+
 .GameTxt {
-    flex-basis: 30%;
     align-items: flex-end;
     color: #FEDB9D;
 }
+.GameTxt p{
+    margin: 0;
+}
 
-/*Gameplay section*/
 
 
 /*config para tablet*/
@@ -254,7 +267,7 @@ nav a {
         height: 100dvh;
     }
 
-    
+
 }
 
 /*config para celular*/
@@ -265,7 +278,7 @@ nav a {
 
     p {
         font-size: 1.1rem;
-       
+
     }
 
     /* navbar para celular*/
