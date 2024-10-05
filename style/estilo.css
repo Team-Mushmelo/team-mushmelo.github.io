@@ -208,6 +208,7 @@ p {
 #Gameplay {
     width: 100%;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .Gamesection {
@@ -216,7 +217,8 @@ p {
     justify-content: space-between;
     margin: 200px 50px;
 }
-.Gamesection:nth-child(2){
+
+.Gamesection:nth-child(2) {
     flex-direction: row-reverse;
 
 }
@@ -229,7 +231,8 @@ p {
     align-items: flex-end;
     color: #FEDB9D;
 }
-.GameTxt p{
+
+.GameTxt p {
     margin: 0;
 }
 
@@ -267,6 +270,9 @@ p {
         height: 100dvh;
     }
 
+    .Gamesection {
+        flex-direction: column;
+    }
 
 }
 
@@ -390,6 +396,10 @@ p {
     #montanhaR {
         max-width: 40dvw;
         bottom: 2.5dvh;
+    }
+
+    .Gamesection, .Gamesection:nth-child(2) {
+        flex-direction: column;
     }
 
 }
