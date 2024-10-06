@@ -405,6 +405,13 @@ p {
         bottom: 2.5dvh;
     }
 
+/*Picture*/
+#picture{
+    height: 65dvh;
+}
+
+    /*Gameplay*/
+
     .Gamesection,
     .Gamesection:nth-child(2) {
         flex-direction: column;
