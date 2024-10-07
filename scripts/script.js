@@ -37,3 +37,25 @@ function navResponsiva() {
         nav.className = "navbar";
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const picture = document.getElementById('picture');
+
+    // Função para lidar com a visibilidade
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Inicia a animação quando o elemento for visível
+                picture.style.animationPlayState = 'running';
+                // Para parar de observar depois que a animação começa
+                observer.unobserve(picture);
+            }
+        });
+    }, {
+        threshold: 0.5 // O elemento precisa estar 50% visível para disparar a animação
+    });
+
+    // Começa a observar o elemento #picture
+    observer.observe(picture);
+});

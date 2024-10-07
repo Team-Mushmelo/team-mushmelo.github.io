@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*Estilos Gerais*/
 body {
     background-color: #3A221C;
 }
@@ -158,7 +159,7 @@ nav a {
     /* centraliza o container */
 }
 
-h2 {
+h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -171,14 +172,28 @@ p {
 }
 
 /*sction picture*/
+@keyframes pictureOpenDesktop{
+    from {
+        height: 50dvh;
+    }
+
+    to {
+
+        height: 115dvh;
+    }
+}
+
 #picture {
     position: relative;
     width: 100%;
-    height: 160dvh;
+    height: 115dvh;
     display: flex;
     overflow: hidden;
 
     justify-content: center;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;
+*/
+    animation: pictureOpenDesktop 2s paused forwards;
 }
 
 #picture img {
@@ -270,9 +285,57 @@ p {
         height: 100dvh;
     }
 
-    .Gamesection {
-        flex-direction: column;
+    /*picture*/
+
+    @keyframes pictureOpenTablet {
+        from {
+            height: 30dvh;
+        }
+
+        to {
+            height: 100dvh;
+        }
     }
+
+    /*Picture*/
+    #picture {
+        height: 100dvh;
+        animation: pictureOpenTablet 2s forwards paused;
+    }
+
+    /*Gameplay*/
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .Gamesection,
+    .Gamesection:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 25px;
+    }
+
+    .GameImg {
+        width: 100%;
+    }
+
+    .GameTxt {
+        margin-top: 10px;
+    }
+
+    .GameTxt p {
+        margin: auto;
+    }
+
 
 }
 
@@ -405,10 +468,23 @@ p {
         bottom: 2.5dvh;
     }
 
-/*Picture*/
-#picture{
-    height: 65dvh;
-}
+    /*Picture*/
+
+    @keyframes pictureOpenMobile {
+        from {
+            height: 30dvh;
+        }
+
+        to {
+            height: 62dvh;
+        }
+    }
+
+
+    #picture {
+        height: 60dvh;
+        animation: pictureOpenMobile 2s forwards paused;
+    }
 
     /*Gameplay*/
 
