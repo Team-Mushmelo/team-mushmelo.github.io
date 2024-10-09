@@ -142,9 +142,7 @@ nav a {
     left: 0;
 }
 
-.disp::after {
-    content: "+769px";
-}
+
 
 .icon {
     display: none;
@@ -308,9 +306,7 @@ footer {
 
 /*config para tablet*/
 @media (max-width: 768px) {
-    .disp::after {
-        content: "768px";
-    }
+   
 
     #templo {
         max-width: 50dvh;
@@ -396,9 +392,7 @@ footer {
 
 /*config para celular*/
 @media(max-width: 425px) {
-    .disp::after {
-        content: "425px";
-    }
+   
 
     h1 {
         text-align: center;
