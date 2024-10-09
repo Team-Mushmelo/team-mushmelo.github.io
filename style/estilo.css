@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -50,7 +50,9 @@ nav a {
 }
 
 .items a:hover {
-    color: blue;
+    color: #4E5B31;
+    border-bottom: #4E5B31 solid 1px;
+  
 }
 
 .btn .Download {
@@ -67,7 +69,7 @@ nav a {
 
 .btn .Download:hover {
     background-color: #fff;
-    color: rgb(17, 105, 105);
+    color: #4E5B31;
 }
 
 /*Parallax config basic*/
@@ -261,7 +263,7 @@ p {
 /*footer*/
 footer {
     background-color: #4E5B31;
-    height: 100dvh;
+    height: auto;
 
     img {
         width: 100%;
@@ -296,11 +298,11 @@ footer {
         align-items: center;
         justify-content: space-evenly;
 
-       img{
-        width: 5dvw;
-        cursor: pointer;
-        pointer-events: auto;
-       }
+        img {
+            width: 5dvw;
+            cursor: pointer;
+            pointer-events: auto;
+        }
     }
 }
 
@@ -388,6 +390,8 @@ footer {
     }
 
 
+    
+
 }
 
 /*config para celular*/
@@ -463,7 +467,7 @@ footer {
         padding: 10px;
         display: block;
         color: white;
-        background-color: #04AA6D;
+        background-color: #4E5B31;
         /* Botão para download com destaque */
         text-decoration: none;
         border-radius: 5px;
@@ -557,5 +561,52 @@ footer {
     .GameTxt p {
         margin: auto;
     }
+
+    
+/*footer*/
+footer {
+ 
+
+    img {
+        width: 100%;
+
+    }
+}
+
+.footContainer {
+    display: flex;
+    padding: 50px 10px ;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    img {
+       
+        width: 25dvw;
+    }
+}
+
+.footDownload {
+    width: 50%;
+
+
+    h1 {
+        color: #EEF1C6;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    ul {
+        margin: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+            width: 5dvw;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+    }
+}
 
 }
