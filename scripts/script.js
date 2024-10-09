@@ -38,7 +38,7 @@ function navResponsiva() {
     }
 }
 
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const picture = document.getElementById('picture');
 
@@ -53,9 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.5 // O elemento precisa estar 50% visível para disparar a animação
+        threshold: 0.1 // O elemento precisa estar 50% visível para disparar a animação
     });
 
     // Começa a observar o elemento #picture
     observer.observe(picture);
 });
+*/

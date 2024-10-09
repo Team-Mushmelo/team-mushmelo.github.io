@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img {
+    pointer-events: none;
+}
+
 /*Estilos Gerais*/
 body {
     background-color: #3A221C;
@@ -82,7 +86,7 @@ nav a {
 
 .parallax img {
     position: absolute;
-    pointer-events: none;
+
 }
 
 /* Imagens do parallax*/
@@ -172,7 +176,7 @@ p {
 }
 
 /*sction picture*/
-@keyframes pictureOpenDesktop{
+@keyframes pictureOpenDesktop {
     from {
         height: 50dvh;
     }
@@ -199,7 +203,6 @@ p {
 #picture img {
     width: 100%;
     position: absolute;
-    pointer-events: none;
     left: 0;
 }
 
@@ -251,7 +254,51 @@ p {
     margin: 0;
 }
 
+/*footer*/
+footer {
+    background-color: #4E5B31;
+    height: 100dvh;
 
+    img {
+        width: 100%;
+
+    }
+}
+
+.footContainer {
+    display: flex;
+    padding: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        width: 25dvw;
+    }
+}
+
+.footDownload {
+    width: 50%;
+
+
+    h1 {
+        color: #EEF1C6;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+       img{
+        width: 5dvw;
+        cursor: pointer;
+        pointer-events: auto;
+       }
+    }
+}
 
 /*config para tablet*/
 @media (max-width: 768px) {
