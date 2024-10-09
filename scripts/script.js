@@ -38,7 +38,7 @@ function navResponsiva() {
     }
 }
 
-/*
+
 document.addEventListener('DOMContentLoaded', () => {
     const picture = document.getElementById('picture');
 
@@ -59,4 +59,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Começa a observar o elemento #picture
     observer.observe(picture);
 });
-*/
