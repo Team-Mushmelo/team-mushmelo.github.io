@@ -1,4 +1,4 @@
-const cacheName = "Team MushMelo-Tao-1.0";
+const cacheName = "DefaultCompany-Tall-1.0";
 const contentToCache = [
     "Build/build.loader.js",
     "Build/build.framework.js",
