@@ -240,7 +240,7 @@ p {
     margin: 200px 50px;
 }
 
-.Gamesection:nth-child(2) {
+.Gamesection:nth-child(even) {
     flex-direction: row-reverse;
 
 }
@@ -367,7 +367,7 @@ footer {
     }
 
     .Gamesection,
-    .Gamesection:nth-child(2) {
+    .Gamesection:nth-child(even) {
         flex-direction: column;
         align-items: center;
         margin: 100px 25px;
@@ -538,7 +538,7 @@ footer {
     /*Gameplay*/
 
     .Gamesection,
-    .Gamesection:nth-child(2) {
+    .Gamesection:nth-child(even) {
         flex-direction: column;
         align-items: center;
         margin: 100px 25px;
