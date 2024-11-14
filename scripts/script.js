@@ -1,3 +1,5 @@
+
+
 let fundo = document.getElementById('fundo');
 
 let montanhaL = document.getElementById('montanhaL');
@@ -59,3 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Começa a observar o elemento #picture
     observer.observe(picture);
 });
+
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.querySelector('.card-inner').classList.toggle('is-flipped');
+    });
+  });
+  
+
