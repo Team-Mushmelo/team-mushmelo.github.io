@@ -3,13 +3,13 @@
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     padding: 50px;
   }
   
   .card {
-    width: 21dvw;
+    width: 24dvw;
     height: 31dvw;
     perspective: 1000px;
   }
@@ -41,7 +41,7 @@
     text-align: center;
   }
   
-  .card-front h2, .card-back h2 {
+   .card-back h2 {
     margin-bottom: 10px; /* Espaçamento entre o título e o texto */
     font-size: 1.5rem; /* Ajuste do tamanho do título, se necessário */
   }
@@ -52,6 +52,10 @@
 
   .card-front {
     background-color: #1c3a1e;
+    img{
+        width: 50%;
+        margin-bottom: 100px;
+    }
   }
   
   .card-back {
@@ -368,6 +372,16 @@ footer {
 /*config para tablet*/
 @media (max-width: 768px) {
    
+    .cards-container {
+        flex-direction: column; /* Coloca os cards em coluna */
+        align-items: center;    /* Centraliza os cards */
+        gap: 30px;              /* Aumenta o espaçamento entre os cards */
+      }
+    
+      .card {
+        width: 80%; /* Ocupa 80% da largura da tela */
+        max-width: 400px; /* Define um limite máximo para os cards */
+      }
 
     #templo {
         max-width: 50dvh;
@@ -453,7 +467,21 @@ footer {
 
 /*config para celular*/
 @media(max-width: 425px) {
-   
+    .cards-container {
+    gap: 20px; /* Reduz o espaçamento entre os cards para telas pequenas */
+  }
+
+  .card {
+    width: 90%; /* Os cards ocupam quase toda a largura da tela */
+  }
+
+  .card-front h2, .card-back h2 {
+    font-size: 1.2rem; /* Ajusta o tamanho do título para telas pequenas */
+  }
+
+  .card-front p, .card-back p {
+    font-size: 0.9rem; /* Ajusta o tamanho do texto */
+  }
 
     h1 {
         text-align: center;
