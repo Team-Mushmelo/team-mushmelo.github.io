@@ -489,6 +489,7 @@ footer {
     width: 90dvw;
     height:123.34dvw ; /* Os cards ocupam quase toda a largura da tela */
     margin-bottom: 100px;
+    margin-left: 0;
   }
 
   .card-front h2, .card-back h2 {
