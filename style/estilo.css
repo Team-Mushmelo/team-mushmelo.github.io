@@ -382,10 +382,13 @@ footer {
 /*config para tablet*/
 @media (max-width: 768px) {
    
+
     .cards-container {
         flex-direction: column; /* Coloca os cards em coluna */
         align-items: center;    /* Centraliza os cards */
-        gap: 30px;              /* Aumenta o espaçamento entre os cards */
+      flex-wrap: nowrap;
+        padding: 0;    
+                /* Aumenta o espaçamento entre os cards */
       }
     
       .card {
@@ -483,6 +486,8 @@ footer {
 @media(max-width: 425px) {
     .cards-container {
     gap: 20px; /* Reduz o espaçamento entre os cards para telas pequenas */
+    flex-wrap: nowrap;
+    padding: 0;  
   }
 
   .card {
