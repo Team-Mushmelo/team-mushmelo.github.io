@@ -431,13 +431,13 @@ footer {
         }
 
         to {
-            height: 85dvh;
+            height: 80dvh;
         }
     }
 
     /*Picture*/
     #picture {
-        height: 100dvh;
+        height: 80dvh;
         animation: pictureOpenTablet 2s forwards paused;
     }
 
@@ -475,10 +475,7 @@ footer {
 
     .GameTxt p {
         margin: auto;
-    }
-
-
-    
+    }   
 
 }
 
@@ -494,6 +491,7 @@ footer {
     width: 90dvw;
     height:123.34dvw ; /* Os cards ocupam quase toda a largura da tela */
     margin-bottom: 100px;
+    margin-left: 0;
   }
 
   .card-front h2, .card-back h2 {
@@ -631,17 +629,17 @@ footer {
 
     @keyframes pictureOpenMobile {
         from {
-            height: 30dvh;
+            height: 10dvh;
         }
 
         to {
-            height: 43dvh;
+            height: 37dvh;
         }
     }
 
 
     #picture {
-        height: 60dvh;
+        height: 37dvh;
         animation: pictureOpenMobile 2s forwards paused;
     }
 
