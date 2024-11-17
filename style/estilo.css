@@ -242,7 +242,7 @@ h1 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     max-width: 75%;
     margin: 0 auto;
@@ -256,7 +256,7 @@ p {
 
     to {
 
-        height: 115dvh;
+        height: 110dvh;
     }
 }
 
@@ -306,12 +306,18 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: justify;
     margin: 200px 50px;
+    .GameTxt{
+        margin-left: 50px;
+    }
 }
 
 .Gamesection:nth-child(even) {
     flex-direction: row-reverse;
-
+    .GameTxt{
+        margin-left:0;
+    }
 }
 
 .GameImg {
@@ -422,7 +428,7 @@ footer {
         }
 
         to {
-            height: 100dvh;
+            height: 85dvh;
         }
     }
 
@@ -621,7 +627,7 @@ footer {
         }
 
         to {
-            height: 62dvh;
+            height: 46dvh;
         }
     }
 

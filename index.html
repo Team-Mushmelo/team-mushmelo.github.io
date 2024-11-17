@@ -1,208 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tao: Cabeças de Jaca</title>
+    <link rel="stylesheet" href="style/estilo.css?v=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tao: Cabeças de Jaca </title>
-  <link rel="stylesheet" href="style/estilo.css?v=1.0">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#4e5b31"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#4e5b31" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#4e5b31" />
+  </head>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#4e5b31">
-  <link rel="shortcut icon" href="favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#4e5b31">
-  <meta name="msapplication-config" content="favicon/browserconfig.xml">
-  <meta name="theme-color" content="#4e5b31">
-
-</head>
-
-<body>
-
-  <nav id="navbar" class="navbar">
-    <a class="logo">
-      <img src="img/LogoNome.svg" width="150">
-    </a>
-    <div class="items">
-      <ul>
-        <a href="#Home">Início</a>
-        <a href="#sobre-jogo">Sobre o jogo</a>
-        <a href="#Gameplay">Gameplay</a>
-      </ul>
-    </div>
-    <div class="btn">
-      <a href="#Download" class="Download">Download</a>
-      <a href="javascript:void(0);" class="icon" onclick="navResponsiva()">
-        <img src="img/Icon_menu.svg" width="32" alt="IconMenu">
+  <body>
+    <nav id="navbar" class="navbar">
+      <a class="logo">
+        <img src="img/LogoNome.svg" width="150" />
       </a>
-    </div>
-
-  </nav>
-  <section class="parallax" id="Home">
-
-    <img src="img/Fundo.png" id="fundo">
-
-    <img src="img/Logo.svg" id="LogoImg">
-    <img src="img/Templo.png" id="templo">
-
-    <img src="img/MontahaPequenaL.png" id="montanhaL">
-    <img src="img/MontahaPequenaR.png" id="montanhaR">
-
-
-
-
-    <img src="img/MontanhaFrente.png" id="montanhaFrente">
-
-    <img src="img/MontanhaDiv.svg" id="montDiv">
-  </section>
-
-  <section id="sobre-jogo" class="sobreJogo">
-    <div class="container">
-      <h2>SOBRE O JOGO</h2>
-      <p>
-        Bem-vindos! Estamos criando "Cabeças de Jaca", um jogo independente no estilo beat'em up com elementos de
-        plataforma, inspirado em clássicos como Cuphead e Castle Crashers. Desenvolvido na Unity e desenhado em pixel
-        art, o jogo acompanha as aventuras de Caipirinha e Jarro, dois amigos de ideias mirabolantes que resolvem
-        invadir uma reserva indígena no Mato Grosso do Sul. Lá, enfrentam criaturas lendárias em busca das preciosas
-        jacas douradas.
-      </p>
-    </div>
-  </section>
-
-  <section id="picture">
-    <img class="upMontDiv" src="img/MontanhaDiv.svg" alt="">
-    <img class="imgMeio" src="img/Minas.jpg" alt="imagem de uma caverna em pixel arte">
-    <img class="downMontDiv" src="img/MontanhaDiv.svg" alt="">
-  </section>
-
-
-  <section id="Gameplay">
-
-
-    <div class="Gamesection">
-      <img src="img/Caipirinha.png" class="GameImg" id="GameImg4">
-      <div class="GameTxt">
-        <h1>Caipirinha</h1>
-        <p>Caipirinha é uma garota-limão do interior que, em busca de uma vida diferente, decide se mudar para a cidade
-          grande. Depois de várias tentativas frustradas, resolve afogar as mágoas no bar, bebendo muito suco. É ali que
-          encontra alguém que transformará sua vida, oferecendo uma proposta tão inesperada quanto intrigante — e ela
-          não hesita em aceitar.</p>
-      </div>
-    </div>
-    <div class="Gamesection">
-      <img src="img/jarro.png" class="GameImg" id="GameImg4">
-      <div class="GameTxt">
-        <h1>Jarro</h1>
-        <p>Jarro é um garoto-abacaxi de um bairro industrial que sempre esteve em busca de maneiras rápidas de ganhar
-          dinheiro. No entanto, sua impulsividade o levou à falência, após várias apostas malsucedidas no popular jogo
-          dos sucos, realizado no mesmo bar frequentado por Caipirinha. É então que, ao ver uma oportunidade inesperada
-          surgir na TV, ele vislumbra a chance de dar uma virada em sua vida.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="Gamesection">
-      <img src="img/fase3.jpg" class="GameImg" id="GameImg3">
-      <div class="GameTxt">
-        <h1>Mecânicas</h1>
-        <p>Para coletar as jacas douradas, os jogadores enfrentarão uma série de obstáculos e batalhas cheias de ação e
-          adrenalina, além de derrotar uma variedade de inimigos e chefes lendários.</p>
-      </div>
-    </div>
-
-    <div class="Gamesection">
-      <img src="img/fase1.jpg" class="GameImg" id="GameImg1">
-      <div class="GameTxt">
-        <h1>Ambiente</h1>
-        <p>
-          Os amigos vão exploram uma reserva indígena repleta de segredos, inspirada em lendas e biomas sul-americanos.
-          Cada fase leva o jogador por paisagens distintas, como as planícies que cercam um antigo templo indígena, os
-          vastos
-          e misteriosos pântanos do Pantanal e as montanhas solitárias e imponentes. Esse universo é um mundo mágico e
-          distópico, onde criaturas lendárias guardam tesouros e mistérios antigos, criando uma atmosfera imersiva e
-          desafiadora para o jogador.
-        </p>
-      </div>
-    </div>
-
-    <div class="Gamesection">
-      <img src="img/fase2.jpg" class="GameImg" id="GameImg2">
-      <div class="GameTxt">
-        <h1>Chefes</h1>
-        <p>
-          Os filhos de Kerana são criaturas lendárias que comandam e governam diversos espaços da reserva indígena
-          invadida.
-          Esses chefes podem ser pacíficos, raivosos, gananciosos ou guiados por pura maldade.
-        </p>
-      </div>
-    </div>
-
-
-  </section>
-    
-  <section id="cards" class="cards-container">
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="img/tejujagua.png" alt="Chefe Tejujagua">
-        </div>
-        <div class="card-back">
-          <h2>Tejujagua</h2>
-          <p>Um lagarto gigante com tres cabeças de cachorro, suas escamas verde musgo e uma postura pacifica. O filho mais 
-            docil de Tau, tem o objetivo de proteger o templo indigena e os tesouros que gurada. Porem ele perdeu a vida na 
-            busca pelas jacas douradas, o que despertou a fúria de seus irmãos e marcou o início de uma jornada de vingança.      
-            </p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="img/Bmoi-Tui.png" alt="Chefe Mboi Tui">
-        </div>
-        <div class="card-back">
-          <h2>Mboi Tui</h2>
-          <p>Uma serpente enorme com um bico de papagaio, uma característica que reforça sua ligação com a fauna aquática. Ele é protetor dos animais e dos pântanos, M'boi Tui é territorial. Ele se vê como superior aos demais seres vivos, muitas vezes demonstrando orgulho e desprezo.</p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-         <img src="img/Ao_Ao.png" alt="Chefe Ao Ao">
-          
-        </div>
-        <div class="card-back">
-          <h2>Ao Ao</h2>
-          <p>Uma criatura monstruosa com corpo peludo, chifres curvados, garras afiadas e olhos vermelhos insanos. Vivendo nas montanhas mais altas, protege ferozmente seu território, atacando quem busca as jacas douradas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <footer id="Download">
-    <img src="img/ondaDiv.svg" alt="">
-    <div class="footContainer">
-      <img src="img/LogoNome.svg" alt="">
-      <div class="footDownload">
-        <h1>Download</h1>
+      <div class="items">
         <ul>
-          <a href="https://felipepaterni.itch.io/tao"><img src="img/itchLogo.svg" alt=""></a>
-          <a href="https://github.com/FelipePaterni/TaoGame/archive/refs/heads/main.zip"><img src="img/window.svg"
-              alt=""></a>
-          <a href="build/"><img src="img/WebGL.svg" alt=""></a>
+          <a href="#Home">Início</a>
+          <a href="#sobre-jogo">Sobre o jogo</a>
+          <a href="#Gameplay">Gameplay</a>
         </ul>
       </div>
-    </div>
-  </footer>
+      <div class="btn">
+        <a href="#Download" class="Download">Download</a>
+        <a href="javascript:void(0);" class="icon" onclick="navResponsiva()">
+          <img src="img/Icon_menu.svg" width="32" alt="IconMenu" />
+        </a>
+      </div>
+    </nav>
+    <section class="parallax" id="Home">
+      <img src="img/Fundo.png" id="fundo" />
 
-</body>
+      <img src="img/Logo.svg" id="LogoImg" />
+      <img src="img/Templo.png" id="templo" />
 
-<script src="scripts/script.js"></script>
+      <img src="img/MontahaPequenaL.png" id="montanhaL" />
+      <img src="img/MontahaPequenaR.png" id="montanhaR" />
 
+      <img src="img/MontanhaFrente.png" id="montanhaFrente" />
+
+      <img src="img/MontanhaDiv.svg" id="montDiv" />
+    </section>
+
+    <section id="sobre-jogo" class="sobreJogo">
+      <div class="container">
+        <h2>SOBRE O JOGO</h2>
+        <br />
+        <p>
+          Bem-vindos ao nosso mundo! Estamos criando Cabeças de Jaca, um jogo
+          independente no estilo beat 'em up com elementos de plataforma,
+          inspirado em clássicos como Cuphead e Castle Crashers. Desenvolvido na
+          Unity e desenhado em pixel art, o jogo segue as aventuras de
+          Caipirinha e Jarro, dois amigos com ideias mirabolantes, que resolvem
+          invadir uma reserva indígena no Mato Grosso do Sul. Lá, eles enfrentam
+          criaturas lendárias e superam desafios épicos em busca das preciosas
+          jacas douradas.
+        </p>
+      </div>
+    </section>
+
+    <section id="picture">
+      <img class="upMontDiv" src="img/MontanhaDiv.svg" alt="" />
+      <img
+        class="imgMeio"
+        src="img/Minas.jpg"
+        alt="imagem de uma caverna em pixel arte"
+      />
+      <img class="downMontDiv" src="img/MontanhaDiv.svg" alt="" />
+    </section>
+
+    <section id="Gameplay">
+      <div class="Gamesection">
+        <img src="img/Caipirinha.png" class="GameImg" id="GameImg4" />
+        <div class="GameTxt">
+          <h1>Caipirinha</h1>
+          <p>
+            Caipirinha é uma garota-limão do interior que, em busca de uma vida
+            diferente, decide se mudar para a cidade grande. Após várias
+            tentativas frustradas, ela resolve afogar as mágoas no bar, bebendo
+            muito suco. É lá que conhece alguém capaz de transformar sua vida,
+            oferecendo uma proposta tão inesperada quanto intrigante, e ela não
+            hesita em aceitá-la.
+          </p>
+        </div>
+      </div>
+      <div class="Gamesection">
+        <img src="img/jarro.png" class="GameImg" id="GameImg4" />
+        <div class="GameTxt">
+          <h1>Jarro</h1>
+          <p>
+            Jarro é um garoto-abacaxi de um bairro industrial sempre em busca de
+            maneiras rápidas de ganhar dinheiro sua impulsividade o levou à
+            falência. No mesmo bar frequentado por Caipirinha fez várias apostas
+            mal sucedidas no popular jogo dos sucos. Quando uma oportunidade
+            inesperada surge na TV, ele vislumbra a chance de dar uma virada em
+            sua vida.
+          </p>
+        </div>
+      </div>
+
+      <div class="Gamesection">
+        <img src="img/fase3.jpg" class="GameImg" id="GameImg3" />
+        <div class="GameTxt">
+          <h1>Mecânicas</h1>
+          <p>
+            Para obter as jacas douradas, os jogadores enfrentarão uma série de
+            desafios e obstáculos, que testarão suas habilidades constantemente.
+            Serão batalhas intensas e repletas de adrenalina, onde cada
+            movimento e estratégia será crucial para a vitória. Além de
+            enfrentarem uma grande variedade de inimigos, terão que derrotar
+            chefes lendários, criaturas poderosas com habilidades únicas.
+          </p>
+        </div>
+      </div>
+
+      <div class="Gamesection">
+        <img src="img/fase1.jpg" class="GameImg" id="GameImg1" />
+        <div class="GameTxt">
+          <h1>Ambiente</h1>
+          <p>
+            Os amigos exploram uma reserva indígena repleta de segredos,
+            inspirada nas lendas e nos biomas sul-americanos. Cada fase leva o
+            jogador por paisagens únicas e deslumbrantes: das planícies que
+            cercam um templo ancestral, aos vastos e enigmáticos pântanos do
+            Pantanal, até as solitárias e imponentes montanhas. Esse universo
+            combina magia e distopia, onde criaturas lendárias guardam tesouros
+            e segredos antigos, criando uma experiência imersiva e desafiadora
+            para o jogador.
+          </p>
+        </div>
+      </div>
+
+      <div class="Gamesection">
+        <img src="img/fase2.jpg" class="GameImg" id="GameImg2" />
+        <div class="GameTxt">
+          <h1>Chefes</h1>
+          <p>
+            Os filhos de Kerana são criaturas lendárias que dominam diversos
+            territórios na reserva indígena invadida. Esses líderes podem agir
+            com paciência e sabedoria, ser consumidos pela raiva, guiados pela
+            ganância ou até mesmo motivados por pura maldade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards" class="cards-container">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="img/tejujagua.png" alt="Chefe Tejujagua" />
+          </div>
+          <div class="card-back">
+            <h2>Tejujagua</h2>
+            <p>
+              Um lagarto gigante com três cabeças de cachorro, coberto por
+              escamas verde-musgo, exibe uma postura pacífica. Ele é o filho
+              mais dócil de Tau, dedicado a proteger o templo indígena e os
+              tesouros que guarda. No entanto, perdeu a vida durante a busca
+              pelas jacas douradas, um acontecimento trágico que despertou a
+              fúria de seus irmãos e marcou o início de uma jornada de vingança.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="img/Bmoi-Tui.png" alt="Chefe Mboi Tui" />
+          </div>
+          <div class="card-back">
+            <h2>Mboi Tui</h2>
+            <p>
+              Uma serpente enorme, com um bico de papagaio que reforça sua
+              ligação com a fauna aquática, M'boi Tui é uma criatura imponente e
+              protetora dos animais e dos pântanos. Territorial e orgulhoso,
+              elese enxerga como superior aos demais seres vivos, frequentemente
+              demonstrando desprezo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="img/Ao_Ao.png" alt="Chefe Ao Ao" />
+          </div>
+          <div class="card-back">
+            <h2>Ao Ao</h2>
+            <p>
+              Uma criatura monstruosa de corpo peludo, chifres curvados, garras
+              afiadas e olhos vermelhos insanos vive nas montanhas mais altas.
+              Feroz e territorial, ela protege seu domínio com violência,
+              atacando impiedosamente qualquer intruso que ouse se aproximar em
+              busca das lendárias jacas douradas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="Download">
+      <img src="img/ondaDiv.svg" alt="" />
+      <div class="footContainer">
+        <img src="img/LogoNome.svg" alt="" />
+        <div class="footDownload">
+          <h1>Download</h1>
+          <ul>
+            <a href="https://felipepaterni.itch.io/tao"
+              ><img src="img/itchLogo.svg" alt=""
+            /></a>
+            <a
+              href="https://github.com/FelipePaterni/TaoGame/archive/refs/heads/main.zip"
+              ><img src="img/window.svg" alt=""
+            /></a>
+            <a href="build/"><img src="img/WebGL.svg" alt="" /></a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="scripts/script.js"></script>
 </html>
