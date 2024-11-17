@@ -5,12 +5,12 @@
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
   }
   
   .card {
-    width: 24dvw;
-    height: 31dvw;
+    width: 25dvw;
+    height: calc(22100 / 645 * 1dvw);
     perspective: 1000px;
   }
   
@@ -35,31 +35,35 @@
     flex-direction: column; /* Alinha os elementos em coluna */
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    color: #FEDB9D;
+    padding: 50px;
+    color: #30291e;
     font-size: 1.2rem;
     text-align: center;
   }
   
    .card-back h2 {
     margin-bottom: 10px; /* Espaçamento entre o título e o texto */
-    font-size: 1.5rem; /* Ajuste do tamanho do título, se necessário */
+    font-size: 1rem; /* Ajuste do tamanho do título, se necessário */
   }
   
   .card-front p, .card-back p {
-    font-size: 1rem; /* Ajuste do tamanho do texto, se necessário */
+    font-size: .85rem; /* Ajuste do tamanho do texto, se necessário */
   }
 
   .card-front {
-    background-color: #1c3a1e;
-    img{
-        width: 50%;
-        margin-bottom: 100px;
+    background: url("../img/Card.png") no-repeat center;
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;    
+    img {
+      width: 50%; 
+      margin: 0; 
     }
   }
   
-  .card-back {
-    background-color: #4E5B31;
+  .card-back {background: url("../img/Card.png") no-repeat center;
+    background-size: cover;
     transform: rotateY(180deg);
   }
   
@@ -379,9 +383,9 @@ footer {
       }
     
       .card {
-        width: 80%; /* Ocupa 80% da largura da tela */
+        width: 50dvw; /* Ocupa 80% da largura da tela */
         max-width: 400px; /* Define um limite máximo para os cards */
-        height: 70dvh;
+        height: 68.527dvw ;
       }
 
     #templo {
@@ -473,7 +477,9 @@ footer {
   }
 
   .card {
-    width: 90%; /* Os cards ocupam quase toda a largura da tela */
+    width: 90dvw;
+    height:123.34dvw ; /* Os cards ocupam quase toda a largura da tela */
+    margin-bottom: 100px;
   }
 
   .card-front h2, .card-back h2 {
