@@ -630,13 +630,13 @@ footer {
         }
 
         to {
-            height: 40dvh;
+            height: 37dvh;
         }
     }
 
 
     #picture {
-        height: 40dvh;
+        height: 37dvh;
         animation: pictureOpenMobile 2s forwards paused;
     }
 
